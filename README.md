@@ -12,7 +12,6 @@ A full-stack Hospital/Healthcare Management System with role-based access contro
 ## Features
 - 🔐 Role-based access control (Admin, Doctor, Staff, etc.)
 - 🧑‍⚕️ Patient management & records
-- 📊 Report generation in DOCX format
 - 🔑 Secure JWT Authentication
 - 🗄️ MySQL database integration
 
@@ -23,7 +22,6 @@ VEDA/
 ├── VEDA_HMS.html       # Main frontend application
 ├── VEDA_server.js      # Backend Express server
 ├── VEDA_schema.sql     # Database schema (run this to set up DB)
-├── veda_report.py      # Python script for generating reports
 ├── package.json        # Node.js dependencies
 ├── .env.example        # Environment variables template
 └── README.md           # This file
@@ -34,7 +32,6 @@ VEDA/
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - [MySQL](https://www.mysql.com/) installed and running
-- [Python 3](https://www.python.org/) (for report generation)
 
 ---
 
@@ -76,23 +73,6 @@ Open `VEDA_HMS.html` in your browser or navigate to:
 ```
 http://localhost:3000
 ```
-
----
-
-## Report Generation (Python)
-
-Install the required Python library:
-```bash
-pip install python-docx
-```
-
-Run the report generator:
-```bash
-python veda_report.py
-```
-This will generate `VEDA_HMS_Report.docx` in the project folder.
-
----
 
 ## ⚠️ Important Security Note
 
